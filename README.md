@@ -55,3 +55,8 @@ Once updates have been made to a particular branch, the changes can be pushed to
 
 | Console Command | Description |
 |-----------------|-------------|
+| `git status` | Receive a list of all local changes made to the working branch. |
+| `git add -A` | Add all changes that were made locally to stage for a potential commit to the remote repo. |
+| `git add <filepath>` | Add specific changes that were made locally to stage for a potential commit to the remote repo. |
+| `git commit -m “update comments”` | Commits changes and adds a comment prior to pushing the local changes to the remote repo. |
+| `git push` | Pushes local updates to the remote repo. Note that the push happens to the working branch that was checked out. |
