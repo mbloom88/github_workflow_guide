@@ -13,7 +13,7 @@ Version control follows the [Semantic Versioning](https://semver.org/) nomenclat
 Additional labels for pre-release and build metadata are available as extensions to the format listed above.
 
 ## Branching Model
-Development follows a [branching model](https://nvie.com/posts/a-successful-git-branching-model/) that uses the following branches:
+Development follows a [Branching Model](https://nvie.com/posts/a-successful-git-branching-model/) that uses the following branches:
 
 Branch Name | Branches From | Merges Into | Purpose
 ------------|---------------|-------------|--------
