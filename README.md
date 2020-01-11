@@ -28,6 +28,6 @@ develop | master | - | The main branch where the source code of HEAD always refl
 ### Cloning a Branch from the Remote Repo
 When starting out, the following commands can be used to clone a specific project branch from the remote repo.
 
-Console Command | Description
-----------------|------------
-`git fetch --all --tags --prune` | Fetch all tags and remotes.
+| Console Command | Description |
+|:---------------:|:------------|
+| `git fetch --all --tags --prune` | Fetch all tags and remotes. |
