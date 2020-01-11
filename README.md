@@ -19,5 +19,4 @@ Branch Name | Branches From | Merges Into | Purpose
 ------------|---------------|-------------|--------
 master | - | - | The main branch where the source code of HEAD always reflects a production-ready state.
 develop | master | - | The main branch where the source code of HEAD always reflects a state with the latest delivered development changes for the next release. Some would call this the “integration branch”. 
-
 When the source code in the develop branch reaches a stable point and is ready to be released, all of the changes should be merged back into master somehow (Release branch) and then tagged with a release number.
