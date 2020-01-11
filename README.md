@@ -1,5 +1,8 @@
 # Github Workflow Guide
 
+## Getting Started
+A quick, 20-minute tutorial can be found [here](https://www.youtube.com/watch?v=0fKg7e37bQE).
+
 ## Markdown
 A markdown tutorial can be found [here](https://guides.github.com/features/mastering-markdown/) and [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for ".md" files.
 
