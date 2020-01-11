@@ -24,6 +24,7 @@ develop | master | - | The main branch where the source code of HEAD always refl
 | hotfix | master | master, develop | Branch naming convention is hotfix-#. Hotfix branches are very much like release branches in that they are also meant to prepare for a new production release, albeit unplanned. They arise from the necessity to act immediately upon an undesired state of a live production version. When a critical bug in a production version must be resolved immediately, a hotfix branch may be branched off from the corresponding tag on the master branch that marks the production version. The essence is that work of team members (on the develop branch) can continue, while another person is preparing a quick production fix. |
 
 ## Project Workflow
+Note that commands in this section use angled brackets (e.g. <url>) to signify where the user should fill in the field. The angled brackets should be left out in the actual commands.
 
 ### Cloning from a Remote Repo
 When starting out, the following commands can be used to clone a specific project branch from the remote repo.
@@ -60,3 +61,40 @@ Once updates have been made to a particular branch, the changes can be pushed to
 | `git add <filepath>` | Add specific changes that were made locally to stage for a potential commit to the remote repo. |
 | `git commit -m “update comments”` | Commits changes and adds a comment prior to pushing the local changes to the remote repo. |
 | `git push` | Pushes local updates to the remote repo. Note that the push happens to the working branch that was checked out. |
+
+### Merging Branches
+If feature, release, or hotfix branches need to be merged back to the master or develop branches, the following commands can be used.
+
+| Console Command | Description |
+|-----------------|-------------|
+| `git checkout <branch_to_merge_to>` | Checkout the branch that will be merged into from the feature, release, or hotfix branch. |
+| `git merge --no-ff <merging_branch>` | Merge the feature, release, or hotfix branch back into the master or develop branch. |
+| `git push origin <branch_to_merge_to>` | Push updated branch to the remote repo. |
+
+### Tagging a Release
+Tagging is necessary to indicate where releases on the master branch have occurred. To tag a release, the following commands can be used.
+
+| Console Command | Description |
+|-----------------|-------------|
+| `git checkout master` | Checkout the master branch that will be merged into. |
+| ` merge --no-ff release-#` |  Merge the release into the master branch. | 
+| `tag -a vX.Y.Z -m "tag comments go here"` | Tag the new release according to the Semantic Versioning process. | 
+| `git push --follow-tags` | Push the tag to the remote repo. |
+
+A list of tags can also be found by typing the following.
+
+| Console Command | Description |
+|-----------------|-------------|
+| `git tag` | Shows all tags on the remote repo. |
+
+### Deleting Branches
+If branches need to be deleted (e.g. after merging) the following commands can be made.
+
+| Console Command | Description |
+|-----------------|-------------|
+| `git branch -d <branch>` | Delete a local branch. |
+| `git push <remote_repo_url> --delete <branch>` | Relete a specfic branch in the remote repo. |
+
+## Useful Github Resources
+* [Essential git commands every developer should know](https://dev.to/dhruv/essential-git-commands-every-developer-should-know-2fl)
+* [Start a new git repository](https://kbroman.org/github_tutorial/pages/init.html)
