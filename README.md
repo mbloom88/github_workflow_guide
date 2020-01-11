@@ -30,4 +30,4 @@ When starting out, the following commands can be used to clone a specific projec
 
 Console Command | Description
 ----------------|------------
-git fetch --all --tags --prune | Fetch all tags and remotes.
+`git fetch --all --tags --prune` | Fetch all tags and remotes.
