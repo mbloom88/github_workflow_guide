@@ -1,7 +1,7 @@
 # Github Workflow Guide
 
 ## Markdown
-A markdown tutorial can be found [here](https://guides.github.com/features/mastering-markdown/) for ".md" files.
+A markdown tutorial can be found [here](https://guides.github.com/features/mastering-markdown/) and [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)for ".md" files.
 
 ## Version Control
 Version control follows the [Semantic Versioning](https://semver.org/) nomenclature (MAJOR.MINOR.PATCH).
