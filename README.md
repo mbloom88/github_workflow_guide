@@ -95,6 +95,9 @@ If branches need to be deleted (e.g. after merging) the following commands can b
 | `git branch -d <branch>` | Delete a local branch. |
 | `git push <remote_repo_url> --delete <branch>` | Relete a specfic branch in the remote repo. |
 
+## Changelogs
+Changelogs should always be included with every release. A breakdown on what is included in a typical changelog can be found [here](https://keepachangelog.com/en/1.0.0/) and an example CHANGELOG.md can be found at this [Github repo](https://github.com/olivierlacan/keep-a-changelog/blob/master/CHANGELOG.md).  
+
 ## Useful Github Resources
 * [Essential git commands every developer should know](https://dev.to/dhruv/essential-git-commands-every-developer-should-know-2fl)
 * [Start a new git repository](https://kbroman.org/github_tutorial/pages/init.html)
