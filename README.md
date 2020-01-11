@@ -25,7 +25,7 @@ develop | master | - | The main branch where the source code of HEAD always refl
 
 ## Project Workflow
 
-### Cloning a Branch from the Remote Repo
+### Cloning from a Remote Repo
 When starting out, the following commands can be used to clone a specific project branch from the remote repo.
 
 | Console Command | Description |
@@ -33,3 +33,25 @@ When starting out, the following commands can be used to clone a specific projec
 | `git fetch --all --tags --prune` | Fetch all tags and remotes. |
 | `git clone --single-branch --branch <branch> <remote_repo_url>` | Clone a specific branch from the remote repo. |
 | `git clone <remote_repo_url> --branch=<tag_name>` | Clone a specific tag from the remote repo. |
+
+### Pull Request from a Working Branch
+If a branch has already been cloned to the local workspace from the remote repo, a standard pull request can also be made from the working project directory.
+
+| Console Command | Description |
+|-----------------|-------------|
+| `git checkout <branch>` | Checkout (or switches to) a desired branch from the remote repo. |
+| `git pull` | Pull request from the remote repo into the working project directory. |
+
+### Creating a New Branch
+If a new branch needs to be created, the following commands can be used.
+
+| Console Command | Description |
+|-----------------|-------------|
+| `git checkout <branch_from>` | Checkout the branch that the new branch will branch from. |
+| `git checkout -b <branch_name> <branch_from>` | Create the new branch from the root branch that was previously checked out. |
+
+### Committing and Pushing Branch Updates
+Once updates have been made to a particular branch, the changes can be pushed to the remote repo.
+
+| Console Command | Description |
+|-----------------|-------------|
