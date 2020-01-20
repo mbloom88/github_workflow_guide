@@ -35,6 +35,7 @@ When starting out, the following commands can be used to clone a specific projec
 | Console Command | Description |
 |-----------------|-------------|
 | `git fetch --all --tags --prune` | Fetch all tags and remotes. |
+| `git clone <remote_repo_url>` | Clone the master branch from the remote repo. |
 | `git clone --single-branch --branch <branch> <remote_repo_url>` | Clone a specific branch from the remote repo. |
 | `git clone <remote_repo_url> --branch=<tag_name>` | Clone a specific tag from the remote repo. |
 
