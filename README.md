@@ -30,7 +30,7 @@ develop | master | - | The main branch where the source code of HEAD always refl
 Note that commands in this section use angled brackets (e.g. <url>) to signify where the user should fill in the field. The angled brackets should be left out in the actual commands.
 
 ### Cloning from a Remote Repo
-When starting out, the following commands can be used to clone a specific project branch from the remote repo.
+When starting out, the following commands can be used to clone a specific project branch from the remote repo. Note: It is recommended to first clone the `master` branch and then checkout other branches from there.
 
 | Console Command | Description |
 |-----------------|-------------|
